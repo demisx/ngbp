@@ -155,8 +155,10 @@ from GitHub, or merge the branch into your existing repository. Assuming you're
 starting from scratch, simply clone this repository using git:
 
 ```sh
-$ git clone git@github.com:demisx/ngbp.git [my-project-name]
-$ cd my-project-name
+$ git clone git@github.com:demisx/ngbp.git [app_name]
+$ cd [app_name]
+$ git remote rename origin upstream
+$ git remote add origin git@[git_host]:[namespace]/[app_name].git
 ```
 
 And then install the remaining build dependencies locally:
